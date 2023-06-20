@@ -1,0 +1,230 @@
+ *{box-sizing:border-box;}
+    body{
+        margin:0;
+        padding:0;
+        }
+       .main-container{
+           display:flex;
+           flex-direction:column;
+       }
+       .top-p{
+           display:flex;
+           flex-direction:row;
+           justify-content:space-between;
+           position:fixed;
+           width:100%;
+           z-index:2;
+           border-bottom:1px double black;
+           background:#34456c;
+       }
+       .top-p img{
+           width:80px;
+       }
+       .menu-H{
+           margin:5px 16px;
+       }
+       .menu-H div{
+           width:30px;
+           height:3px;
+           margin-top:5px;
+           background:black;
+       }
+       .menu{
+           position:absolute;
+           top:30px;
+           display:none;
+           background:#34456c;
+           width:100%;
+           z-index:3;
+       }
+       .menu li{
+           display:block;
+       }
+       .menu li a{
+           text-decoration:none;
+           color:#fff; 
+       }
+       div:hover~ul{
+           display:block;
+       }
+       .menu-H:hover .p1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-H:hover .p2 {
+  opacity: 0;
+}
+.menu-H:hover .p3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+       .hero-image{
+        background:url('https://i.ibb.co/z20xTvg/images-16.jpg');     
+            background-repeat:no-repeat;
+            min-width:100%;
+            height:185px;
+            position:;
+            background-size:contain;
+            order:;          
+       }
+       .hero-text{
+          position:absolute;
+          top:25px;
+          right:0px;
+          text-align:center;
+          width:300px;
+          font-size:20px;
+          color:#fff;
+       }
+       .homes{
+           display:grid;
+           grid-template-columns:2fr auto;
+           grid-template-rows:auto auto;
+           gap:5px;
+           height:148px;
+       }
+       .homes img{
+           width:100%;
+           height:68%;
+       }
+       .homes p{
+           font-size:15px;
+          margin:-3px 0 5px;
+       }
+       img[alt|="img"]{
+           width:20px;
+           height:20px;
+       }
+       button{
+                display:inline-block;
+                width:100px;
+                height:25px;
+                font-size:px;
+                box-shadow:0px 5px grey;
+                outline:none;
+                border:none;
+                border-radius:10px;
+            }
+            button:active{
+                transform:translatey(5px);
+            }
+            .ads-img{
+                width:100%;
+            }
+            .ads-img img{
+                width:100%;
+            }
+     .eng-card{
+         background:;
+         width:370px;
+         position:relative;
+         left:50%;
+         transform:translatex(-50%);
+         border:5px slid green;
+         box-shadow:2px 2px 15px grey;
+         margin-bottom:10px;
+     }
+     .eng-card img{
+         width:100%;
+     }
+     .card-text{
+         text-align:center;         
+     }          
+     .card-text h3{
+                  margin:0;
+                  padding:15px 0;   
+     }
+     .survey{
+         background:linear-gradient(to right,#3F301D,#371D10);
+     }
+     .survey-text{
+         margin:px;
+         text-align:center;
+         font-size:15px; 
+         color:white;     
+     }
+     .survey button{
+         font-size:20px;
+         width:200px;
+         height:40px;
+
+     }
+     .address{
+         display:grid;
+         grid-template-columns:auto auto;
+         background:#3F301D;
+     }
+     .l-link{
+         padding:10px;
+         
+     }
+     .l-link a{
+         font-size:10px;
+         text-decoration:none;
+         color:#fff;
+         
+     }
+     ul{
+         display:fle;
+         flex-direction:row;
+         margin:0;
+         padding:0;
+     }
+     ul li{
+         list-style-type:none;
+         padding:10px;
+         display:inline-block;
+     }
+     /*--------media query--------*/
+     @media screen and (min-width:680px){
+         .hero-image{
+             background-size:cover;
+             height:400px;
+             order:;
+         }
+         .hero-text{
+             top:5rem;
+             font-size:40px;
+             width:600px;
+             color:black;
+             font-weight:bold;
+             order:;
+         }
+         .our-homes{
+             order:;
+         }
+         .homes{
+             width:850px;
+             grid-template-columns:none;
+             grid-template-rows:none;
+             height:auto;
+             position:relative;
+             left:50%;
+             transform:translatex(-50%);
+             box-shadow:5px 5px 15px grey;
+         }
+         .homes img{
+             width:100%;
+             height:100%!important;
+             border:5px solid #34456c;
+             padding:5px;         
+             }
+         .homes p{
+             text-align:center;
+             font-size:25px;
+             padding:10px 0 10px;
+        }
+        img[alt|="img"]{
+           width:20px;
+           height:20px;
+           display:none;
+           }
+         .eng-card{
+             width:600px;
+             }
+         .survey{
+             
+         }
+         .address{
+             
+         }
+     }
